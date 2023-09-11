@@ -11,191 +11,248 @@
     <meta name="author" content="LayoutIt!">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 <style>
-	body{background-color: #F8F8FF;}
-	.sombra{box-shadow: 5px 5px 30px #504e4e;}
-	.rodapeStyle{
-		background-color: #dbdbe2;
-		text-align: center;
-		padding-top: 10px;
-		font-size: 1.1em ;
-	}
+
+/* aprendendo chamar um css seu	 */
+
+body{
+	
+	background-image: url("IMAGENS/FUNDO.png");
+	
+}
+
+.meuPadding{
+	padding-top: 15px;
+	padding-bottom: 10px;
+}	
+.logoMenor{
+	width: 100px;
+	height: auto;
+	padding-left: 10px;
+}
+.meuRodape{
+	background-color: rgb(255, 255, 255);
+	padding: 10px;
+	height: 50px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color:rgb(17, 17, 17);	
+	text-align: center;
+}
+ h1{
+	padding:20px;
+ }
+
+ .white{
+	/*fundo do container*/
+	background-color: white;
+}
+	
+
+
+
+
 </style>
+
 
   </head>
   <body>
-	
 
-    <div class="container-fluid sombra"> <!--container-fluid se eu quiser a tela inteira-->
-	
-	<!--MENU-->
-		<div class="row">
-			<div class="col-md-1">
-				<img src="IMAGENS/logo.png">
-			</div>
+    <div class="container white">
+		<!-- fluid tela inteira -->
+		<!-- caixa principal -->
+		
+		<!-- começa aqui minha div com logo e botoes -->
+	<div class="row">
 
 
+		<div class="col-md-2">
+			<!-- a div do logo eu mudei para 2 para ficar menor e o resto para a div nos botoes -->
+			<img src="imagens/logo.png" class="logoMenor" title="logo empresa" alt="logo">
+		</div>
 
 
+		<div class="col-md-8 meuPadding"> 			<!-- chamando um css criado por mim -->
+		
+			<ul class="nav nav-pills nav justify-content-center ">
+				<li class="nav-item">
+				  <a class="nav-link" href="index.html">Home</a>
+				  <!-- active é a classe para deixar com fundo azul -->
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active " href="resorts.html">Resorts</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="pacotes.html">Pacotes</a>
+				</li>
+				
+			  </ul>
 
-			<div class="col-md-10"> 
-				<ul class="nav justify-content-center nav nav-pills"> <!--css retirada do bootstrap Brasil p centrazilzar-->
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a> 
-						<!--copiei o css do botão colorido do bootstrap brasil para mudar a cor do btn-->
-					</li>
-					<li class="nav-item">
-						<a class="btn btn-success active" href="resorts.html">Resorts</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Pacotes</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contato.html">Cadastre-se</a>
-					</li>
-					
-				</ul>
-			</div>
+		</div>
+
+		<div class="col-md-2">
+			<!-- div vazia para deixar meu menu no centro
+			coloquei uma de 2 para o logo, outra de 8 para os botoes e outra na direita de 2 -->
+		</div>
 	</div>
 
-<!--MENU TERMINA AQUI-->
+<!-- termina aqui logo e botoes -->
 
 
 
+<!-- aqui começa os Thumbnail -->
 
-
-<!--THUMBNAILS-->
-<div><h1> Resorts  internacionais</h1></div>
-
-	<div class="row">
+	<div class="row meuPadding">
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-4">
-					<div class="card" >
-						<img class="card-img-top" alt="Bootstrap Thumbnail First" src="IMAGENS/JAPAO.png">
+					<div class="card">
+						<img class="card-img-top" alt="Bootstrap Thumbnail First" src="imagens/resort1.png">
 						<div class="card-block">
 							<h5 class="card-title">
-								Japão
+								Sterling Shores
+                                Destin, Estados Unidos
 							</h5>
 							<p class="card-text">
-								A partir de seg 31 ate 17 abr <br />
-								Vôo direto
-								R$ 5000,00
+								Esta propriedade à beira-mar do Hilton Grand Vacations Club Ocean Enclave Myrtle Beach oferece suítes com cozinha. Uma grande piscina ao ar livre...
 							</p>
-							
+							<p>
+								 <a class="btn" href="#">Veja mais</a>
+							</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="card">
-						<img class="card-img-top" alt="Bootstrap Thumbnail Second" src="IMAGENS/franca.PNG">
+						<img class="card-img-top" alt="Bootstrap Thumbnail Second" src="imagens/resort2.png">
 						<div class="card-block">
 							<h5 class="card-title">
-								Chile
+								Henderson Beach Resort
+                                Destin, Estados Unidos
 							</h5>
 							<p class="card-text">
-								A partir de seg 31 ate 17 abr <br />
-								Vôo direto
-								R$ 5000,00
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
 							</p>
-							
-						</div>
-					</div>
-
-					
-				</div>
-				<div class="col-md-4">
-					<div class="card">
-						<img class="card-img-top" alt="Bootstrap Thumbnail Third" src="IMAGENS/ITALIA.png">
-						<div class="card-block">
-							<h5 class="card-title">
-								Italia
-							</h5>
-							<p class="card-text">
-								A partir de seg 31 ate 17 abr <br />
-								Vôo direto
-								R$ 5000,00
+							<p>
+								<a class="btn" href="#">Veja mais</a>
 							</p>
-							
 						</div>
 					</div>
 				</div>
-
 				<div class="col-md-4">
 					<div class="card">
-						<img class="card-img-top" alt="Bootstrap Thumbnail Third" src="IMAGENS/grecia.png">
+						<img class="card-img-top" alt="Bootstrap Thumbnail Third" src="imagens/resort3.png">
 						<div class="card-block">
 							<h5 class="card-title">
-								Grecia
+								The Ritz-Carlton Bal Harbour Miami
 							</h5>
 							<p class="card-text">
-								A partir de seg 31 ate 17 abr <br />
-								Vôo direto
-								R$ 5000,00
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
 							</p>
-							
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="card">
-						<img class="card-img-top" alt="Bootstrap Thumbnail Third" src="IMAGENS/franca.png">
-						<div class="card-block">
-							<h5 class="card-title">
-								França
-							</h5>
-							<p class="card-text">
-								A partir de seg 31 ate 17 abr <br />
-								Vôo direto
-								R$ 5000,00
+							<p>
+								<a class="btn" href="#">Veja mais</a>
 							</p>
-							
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="card">
-						<img class="card-img-top" alt="Bootstrap Thumbnail Third" src="IMAGENS/israel.png">
-						<div class="card-block">
-							<h5 class="card-title">
-								Israel
-							</h5>
-							<p class="card-text">
-								A partir de seg 31 ate 17 abr <br />
-								Vôo direto
-								R$ 5000,00
-							</p>
-							
 						</div>
 					</div>
 				</div>
 			</div>
-					
-		</div>
-
-		
-	</div>
 
 
 
-	<div class="row">
-		<div class="col-md-12 rodapeStyle">
+
+
+ <!-- aqui começa os Thumbnail -->
+
+ <div class="row meuPadding">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" alt="Bootstrap Thumbnail First" src="imagens/resort4.png">
+                    <div class="card-block">
+                        <h5 class="card-title">
+                            St. Regis Bal Harbour Resort
+                        </h5>
+                        <p class="card-text">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                        </p>
+                        <p>
+                             <a class="btn" href="#">Veja mais</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" alt="Bootstrap Thumbnail Second" src="imagens/resort5.png">
+                    <div class="card-block">
+                        <h5 class="card-title">
+                            Beach Haus Bal Harbour
+                        </h5>
+                        <p class="card-text">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                        </p>
+                        <p>
+                            <a class="btn" href="#">Veja mais</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" alt="Bootstrap Thumbnail Third" src="imagens/resort6.png">
+                    <div class="card-block">
+                        <h5 class="card-title">
+                            Treasure Island - TI Las Vegas 
+
+                        </h5>
+                        <p class="card-text">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                        </p>
+                        <p>
+                            <a class="btn" href="#">Veja mais</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>           
+
+			<div class="row">
+				<div class="col-md-12">
+                    <h1> MAIS PROCURADOS </h1>
+				</div>
+			</div>
+
+
+			<!-- meu banner estático -->
+
+			<div class="row">
+				<div class="col-md-12">
+					<!-- peguei a classe do carrossel -->
+					<img  class="d-block w-100"src="imagens/banner_estatico.png">
+				</div>
+			</div>
+
+			<!-- termina aqui banner -->
+
 			
-			<p>
-				Todos os Direitos Reservados - 2023 
-						
-			</p>
+
+			<!-- meu rodape -->
+
+			<div class="row meuRodape">
+				<div class="col-md-12">
+					Todos os direitos reservados - 2023 - curso SENAC
+				</div>
+			</div>
+
+			<!-- rodape termina aqui -->
+
+
 		</div>
 	</div>
+
 </div>
-
-<!--PAGINA TERMINA AQUI-->
-
-
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
